@@ -52,7 +52,7 @@ Console.WriteLine("Performining the magic...");
 Platform? platformObj = platform switch
 {
     1 => new ChessDotCom(),
-    2 => null,
+    2 => new Lichess(apiKey),
     _ => null
 };
 if (platformObj == null)

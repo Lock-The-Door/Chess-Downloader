@@ -1,6 +1,6 @@
 class GamesNotFoundException : Exception
 {
-    public GamesNotFoundException(string platform) : base(platform + ": No games found for this player. (HAve you typed the correct username?)")
+    public GamesNotFoundException(string platform) : base(platform + ": No games found for this player. (Have you typed the correct username?)")
     {
     }
 }

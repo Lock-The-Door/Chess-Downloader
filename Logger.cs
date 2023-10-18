@@ -33,7 +33,7 @@ class Logger
             return $"{Message}... [{Progress}/{Total}]";
         }
     }
-    private Dictionary<Guid, Status> _statuses = new();
+    private readonly Dictionary<Guid, Status> _statuses = new();
     private Status GetStatus(Guid id) {
         if (_statuses.ContainsKey(id)) {
             return _statuses[id];
@@ -83,7 +83,7 @@ class Logger
         status.Total = total;
         Log(status.ToString(), level);
 
-        if (progress >= total)
+        if (progress >= total && total != 0)
         {
             _statuses.Remove(_statuses.First(s => s.Value == status).Key);
         }
