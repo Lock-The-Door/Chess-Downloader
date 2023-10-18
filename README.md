@@ -1,4 +1,6 @@
 # Chess Downloader
+![wakapi badge](https://pc-08.pug-squeaker.ts.net/wakapi/api/badge/Lock-The-Door/interval:all/project:chess-downloader)
+
 Queries the apis to download all the chess games from a chess.com or lichess user
 
 ## Building
